@@ -1,13 +1,14 @@
 #include "runtime.h"
+#include "test_runner_p.h"
 
 #include <functional>
-#include <test_runner.h>
 
 using namespace std;
 
 namespace runtime {
 
 namespace {
+    
 class Logger : public Object {
 public:
     static int instance_count;
